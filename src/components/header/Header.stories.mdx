@@ -1,0 +1,73 @@
+import {
+  Meta,
+  Canvas,
+  Story,
+  ArgsTable
+} from '@storybook/addon-docs/blocks';
+import Header from './Header';
+
+<Meta title="Components/Header" component={Header} />
+
+# Header
+
+Aqui vai a descrição do header e você pode escrever o que achar melhor.
+
+<ArgsTable of={Header} />
+
+## Header examples
+
+### H1 Header
+
+<Canvas>
+  <Story
+    name="H1 Header"
+    args={{
+      children: 'H1 Header',
+      as: 'h1',
+    }}
+  >
+    {(args) => <Header {...args} />}
+  </Story>
+</Canvas>
+
+### H2 Header
+
+<Canvas>
+  <Story
+    name="H2 Header"
+    args={{
+      children: 'H2 Header',
+      as: 'h2',
+    }}
+  >
+    {(args) => <Header {...args} />}
+  </Story>
+</Canvas>
+
+### H3 Header
+
+<Canvas>
+  <Story
+    name="H3 Header"
+    args={{
+      children: 'H3 Header',
+      as: 'h3',
+    }}
+  >
+    {(args) => <Header {...args} />}
+  </Story>
+</Canvas>
+
+### H4 Header
+
+<Canvas>
+  <Story
+    name="H4 Header"
+    args={{
+      children: 'H4 Header',
+      as: 'h4',
+    }}
+  >
+    {(args) => <Header {...args} />}
+  </Story>
+</Canvas>
